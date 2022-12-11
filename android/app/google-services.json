@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001818590259",
+    "project_id": "hill-des-encryption",
+    "storage_bucket": "hill-des-encryption.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001818590259:android:eda3131a281b38cf896746",
+        "android_client_info": {
+          "package_name": "com.example.hill_des_encryption"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001818590259-bj3i97t8r58nkmcsh8f88dd2bhfi5alc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOc0TXao88DpYFo5rymSIP4EdxcuEbVrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001818590259-bj3i97t8r58nkmcsh8f88dd2bhfi5alc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
