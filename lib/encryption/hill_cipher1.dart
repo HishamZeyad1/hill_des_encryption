@@ -7,20 +7,24 @@ class HillCipher {
 
   static void encrypt(String message) {
     message = message.toUpperCase();
-    print("Enter key matrix size");
-    int? matrixSize = int.parse(stdin.readLineSync()!); //userInput.nextInt();
-    print("Enter Key/encryptionKey matrix ");
-    // List<List<int>> keyMatrix = new List<int>(matrixSize)[matrixSize];
-    var keyMatrix = List.generate(
-        matrixSize, (i) => List.filled(matrixSize, 0, growable: false),
-        growable: false);
+    // print("Enter key matrix size");
+    // int? matrixSize = int.parse(stdin.readLineSync()!); //userInput.nextInt();
+    // print("Enter Key/encryptionKey matrix ");
+    // // List<List<int>> keyMatrix = new List<int>(matrixSize)[matrixSize];
+    // var keyMatrix = List.generate(
+    //     matrixSize, (i) => List.filled(matrixSize, 0, growable: false),
+    //     growable: false);
+    //
+    // for (int i = 0; i < matrixSize; i++) {
+    //   for (int j = 0; j < matrixSize; j++) {
+    //     keyMatrix[i][j] =
+    //         int.parse(stdin.readLineSync()!); //userInput.nextInt();
+    //   }
+    // }
+    int matrixSize=2;
+    List<List<int>> n=[[1,6],[1,9]];
+    List<List<int>> keyMatrix = n;
 
-    for (int i = 0; i < matrixSize; i++) {
-      for (int j = 0; j < matrixSize; j++) {
-        keyMatrix[i][j] =
-            int.parse(stdin.readLineSync()!); //userInput.nextInt();
-      }
-    }
     validateDeterminant(keyMatrix, matrixSize);
     // List<List<int>> messageVector = new List<int>(matrixSize)[1];
     List<List<int>> messageVector = List.generate(
@@ -68,18 +72,22 @@ class HillCipher {
 
   static void decrypt(String message) {
     message = message.toUpperCase();
-    print("Enter key matrix size");
-    int n = int.parse(stdin.readLineSync()!); //userInput.nextInt();
-    print("Enter inverseKey/decryptionKey matrix ");
-    // List<List<int>> keyMatrix = new List<int>(n)[n];
-    var keyMatrix = List.generate(n, (i) => List.filled(n, 0, growable: false),
-        growable: false);
-    for (int i = 0; i < n; i++) {
-      for (int j = 0; j < n; j++) {
-        keyMatrix[i][j] =
-            int.parse(stdin.readLineSync()!); //userInput.nextInt();
-      }
-    }
+    // print("Enter key matrix size");
+    // int n = int.parse(stdin.readLineSync()!); //userInput.nextInt();
+    // print("Enter inverseKey/decryptionKey matrix ");
+    // // List<List<int>> keyMatrix = new List<int>(n)[n];
+    // var keyMatrix = List.generate(n, (i) => List.filled(n, 0, growable: false),
+    //     growable: false);
+    // for (int i = 0; i < n; i++) {
+    //   for (int j = 0; j < n; j++) {
+    //     keyMatrix[i][j] =
+    //         int.parse(stdin.readLineSync()!); //userInput.nextInt();
+    //   }
+    // }
+    int n=2;
+    List<List<int>> m=[[3,24],[17,9]];
+    List<List<int>> keyMatrix = m;
+
     validateDeterminant(keyMatrix, n);
     // List<List<int>> messageVector = new List<int>(n)[1];
     var messageVector = List.generate(n, (i) => <int>[1], growable: false);
